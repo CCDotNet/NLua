@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="..\tests\Core.cs">
+        <Link>Core.cs</Link>
+      </Compile>
+      <Compile Include="..\tests\Entity.cs">
+        <Link>Entity.cs</Link>
+      </Compile>
+      <Compile Include="..\tests\LuaTests.cs">
+        <Link>LuaTests.cs</Link>
+      </Compile>
+      <Compile Include="..\tests\TestLua.cs">
+        <Link>TestLua.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core\NLua.Standard\NLua.Standard.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NUnit" Version="3.12.0" />
+    </ItemGroup>
+
+</Project>

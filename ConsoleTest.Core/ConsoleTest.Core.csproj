@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="..\tests\Entity.cs">
+        <Link>Entity.cs</Link>
+      </Compile>
+      <Compile Include="..\tests\TestLua.cs">
+        <Link>TestLua.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core\NLua.Standard\NLua.Standard.csproj" />
+    </ItemGroup>
+
+</Project>
